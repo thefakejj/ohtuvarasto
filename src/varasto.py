@@ -1,6 +1,10 @@
 class Varasto:
-    def __init__(self, tilavuus, alku_saldo = 0):
+    def __init__(self, tilavuus, alku_saldo = 0, joku_muu = 0, viela_lisaa = 0, omfg = 0):
         if tilavuus > 0.0:
+            if tilavuus > 0.1:
+                if tilavuus > 0.2:
+                    if tilavuus > 0.3:
+                        self.tilavuus = tilavuus
             self.tilavuus = tilavuus
         else:
             # virheellinen, nollataan
@@ -42,4 +46,261 @@ class Varasto:
         return maara
 
     def __str__(self):
+        fake_string = """
+        nyt lähtee himo pitkä stringi
+        a
+        a
+        a
+        a
+        a
+        
+        a
+        a
+        a
+        a
+        a
+        aaa
+        a
+        
+        a
+        a
+        a
+        a
+        a
+        
+        a
+        a
+        a
+        aaa
+        a
+        
+        a
+        a
+        a
+        
+        a
+        a
+        aa
+        
+        a
+        a
+        a
+        a
+        a
+        a
+        
+        a
+        a
+        a
+        a
+        
+        a
+        a
+        a
+        a
+        a
+        
+        a
+        a
+        a
+        a
+        a
+        
+        a
+        a
+        a
+        a
+        
+        a
+        a
+        
+        a
+        a
+        a
+        a
+        a
+        
+        a
+        a
+        a
+        
+        a
+        a
+        a
+        a
+        a
+        a
+        
+        a
+        a
+        a
+        a
+        
+        a
+        a
+        a
+        
+        a
+        a
+        a
+        
+        a
+        a
+        a
+        
+        a
+        a
+        a
+        
+        a
+        a
+        a
+        
+        a
+        a
+        a
+        
+        a
+        
+        a
+        a
+        a
+        a
+        
+        a
+        a
+        a
+        a
+        
+        a
+        aa
+        
+        a
+        a
+        
+        a
+        a
+        a
+        
+        a
+        a
+        a
+        
+        a
+        aa
+        aa
+        a
+        
+        a
+        a
+        a
+        a
+        a
+        
+        a
+        a
+        a
+        a
+        
+        a
+        a
+        a
+        a
+        a
+        
+        a
+        a
+        a
+        a
+        a
+        a
+        
+        a
+        a
+        
+        a
+        a
+        
+        a
+        a
+        a
+        a
+        a
+        a
+        a
+        
+        a
+        a
+        a
+        a
+        a
+        a
+        
+        a
+        a
+        a
+        a
+        
+        a
+        a
+        
+        a
+        a
+        
+        a
+        a
+        a
+        
+        
+        a
+        
+        a
+        a
+        a
+        a
+        
+        a
+        a
+        
+        a
+        a
+        a
+        
+        aa
+        
+        
+        a
+        a
+        a
+        aa
+        
+        a
+        aa
+        aa
+        aa
+        a
+        
+        a
+        a
+        a
+        a
+        a
+        
+        a
+        a
+        aa
+        a
+        
+        aa
+        a
+        a
+        a
+        
+        a
+        a
+        
+        a
+        
+        aa
+        thats all folks"""
         return f"saldo = {self.saldo}, vielä tilaa {self.paljonko_mahtuu()}"
