@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: poetry install
       - name: Lint project
-        run: poetry run pylint
+        run: poetry run pylint src
       - name: Run tests
         run: poetry run coverage run --branch -m pytest
       - name: Coverage report
