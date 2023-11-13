@@ -1,10 +1,6 @@
 class Varasto:
     def __init__(self, tilavuus, alku_saldo = 0):
         if tilavuus > 0.0:
-            if tilavuus > 1.0:
-                if tilavuus > 2.0:
-                    if tilavuus > 3.0:
-                        self.tilavuus = tilavuus
             self.tilavuus = tilavuus
         else:
             # virheellinen, nollataan
